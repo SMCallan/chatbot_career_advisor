@@ -45,5 +45,3 @@
 - You only pay for what you use, and the models are secure.
 
 Remember to keep your API key confidential and avoid sharing it publicly. If you accidentally expose your key, make sure to revoke it and generate a new one from the OpenAI dashboard.
-
-I hope this improved version of your guide helps make it clearer and more informative for readers!
