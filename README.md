@@ -1,5 +1,3 @@
-Sure, I can help you improve your guide. Here's an updated version with some formatting, clarifications, and additional information:
-
 # Guide: Making an AI Chatbot
 
 ## Requirements
