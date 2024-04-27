@@ -4,7 +4,7 @@ from tkinter import ttk, scrolledtext
 from PIL import Image, ImageTk
 
 # Initialize the OpenAI client with your API key
-client = OpenAI(api_key="api-key-here")
+client = OpenAI(api_key="sk-proj-VwWGuDVfRYI2LCGdcA1ST3BlbkFJk4nvGkyl8qFeZWAkQowl")
 
 # Function to generate career advice
 def generate_career_advice(user_input):
@@ -22,7 +22,7 @@ def send_message():
     if len(questions) > 0:
         question = questions.pop(0)
         conversation.configure(state=tk.NORMAL)
-        conversation.insert(tk.END, "Chatbot: " + question + "\n", "bot")
+        conversation.insert(tk.END, "Career Advisor: " + question + "\n", "bot")
         conversation.configure(state=tk.DISABLED)
         conversation.see(tk.END)
         user_input = user_entry.get()
@@ -41,7 +41,7 @@ def send_message():
         user_input = user_entry.get()
         user_entry.delete(0, tk.END)
         conversation.configure(state=tk.NORMAL)
-        conversation.insert(tk.END, "Chatbot: I'm sorry, but I am not programmed to handle general conversation. My purpose is to provide career advice based on your responses to specific questions. If you would like to start the career advisory process, please click the 'Start Career Advice' button.\n", "bot")
+        conversation.insert(tk.END, "Career Advisor: I'm sorry, but I am not programmed to handle general conversation. My purpose is to provide career advice based on your responses to specific questions. If you would like to start the career advisory process, please click the 'Start Career Advice' button.\n", "bot")
         conversation.configure(state=tk.DISABLED)
         conversation.see(tk.END)
 
@@ -58,27 +58,27 @@ def start_career_advice():
     user_inputs = []
     send_button.config(state=tk.NORMAL)
     conversation.configure(state=tk.NORMAL)
-    conversation.insert(tk.END, "Chatbot: Hello! What is your name?\n", "bot")
+    conversation.insert(tk.END, "Career Advisor: Hello! What is your name?\n", "bot")
     conversation.configure(state=tk.DISABLED)
     conversation.see(tk.END)
 
 # Create the main window
 window = tk.Tk()
-window.title("Career Advisor Chatbot")
+window.title("Career Advisor")
 window.configure(bg="white")
 
 # Load and display the logo
 logo = Image.open("logo.png")
-logo = logo.resize((100, 100), resample=Image.LANCZOS)
+logo = logo.resize((300, 300), resample=Image.LANCZOS)
 logo_photo = ImageTk.PhotoImage(logo)
 logo_label = ttk.Label(window, image=logo_photo, background="white")
 logo_label.pack(pady=10)
 
 # Create conversation history text area
-conversation = scrolledtext.ScrolledText(window, wrap=tk.WORD, width=50, height=10, font=("Arial", 12))
+conversation = scrolledtext.ScrolledText(window, wrap=tk.WORD, width=59, height=15, font=("Arial", 12))
 conversation.pack(pady=10)
-conversation.tag_config("bot", foreground="green")
-conversation.tag_config("advice", foreground="red")
+conversation.tag_config("bot", foreground="black" )
+conversation.tag_config("advice", foreground="black")
 conversation.configure(state=tk.DISABLED)
 
 # Create user input entry and send button
