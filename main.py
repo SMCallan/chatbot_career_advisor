@@ -4,7 +4,7 @@ from tkinter import ttk, scrolledtext
 from PIL import Image, ImageTk
 
 # Initialize the OpenAI client with your API key
-client = OpenAI(api_key="sk-proj-VwWGuDVfRYI2LCGdcA1ST3BlbkFJk4nvGkyl8qFeZWAkQowl")
+client = OpenAI(api_key="api key here")
 
 # Function to generate career advice
 def generate_career_advice(user_input):
