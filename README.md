@@ -46,9 +46,9 @@
 
 Remember to keep your API key confidential and avoid sharing it publicly. If you accidentally expose your key, make sure to revoke it and generate a new one from the OpenAI dashboard.
 
-#Customise the Chatbot
+# Customise the Chatbot
 
-Here's a simple guide on how a user can modify certain parts of the code to make the model work differently:
+## Here's a simple guide on how a user can modify certain parts of the code to make the model work differently:
 
 1. Changing the AI Model:
    - In the `generate_career_advice` function, locate the line: `model="gpt-3.5-turbo"`.
