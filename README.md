@@ -1,4 +1,5 @@
-# Guide: Making an AI Chatbot USING PYTHON & OPENAI API.
+# Guide: Making an AI Chatbot 
+USING PYTHON & OPENAI API.
 ![image](https://github.com/SMCallan/chatbot_career_advisor/assets/126923185/772c8ac7-c162-4b8e-b892-43c156b928eb)
 
 
