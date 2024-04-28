@@ -43,6 +43,7 @@
    - If you have any questions, search for solutions online or consult the documentation.
 
 ## OpenAI API Key
+# Quick start guide: https://platform.openai.com/docs/quickstart
 - Obtain an API key from OpenAI (keep the key secret).
   - Note: You can delete the key after revealing it and generate a new one if needed.
 - OpenAI models are trained to industry standards and provide fine-tuning capabilities.
