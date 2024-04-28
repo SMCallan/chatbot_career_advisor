@@ -85,6 +85,10 @@ Remember to keep your API key confidential and avoid sharing it publicly. If you
    - For instance, you could modify the bullet points to numbered steps or add a closing message.
    - Changing the advice formatting can enhance readability and make the output more visually appealing.
 
+6. Change the logo:
+   - Easily swap the logo by changing the logo.png file.
+   - Change the size by adjusting the main.py code. 
+
 Remember to run the code after making any modifications to see the effects of your changes. Experimenting with different variations can help you create a unique and tailored AI chatbot experience.
 
 Note: Make sure to handle any errors or exceptions that may arise due to the modifications you make to the code.
